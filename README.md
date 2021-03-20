@@ -1,6 +1,9 @@
 What is Numpy ?
 
-Here is a more in depth information about Numpy@ https://numpy.org/doc/stable/user/whatisnumpy.html
+Here is a more in depth information about Numpy:
+(https://numpy.org/doc/stable/user/whatisnumpy.html)
+(https://docs.scipy.org/doc/numpy/reference/routines.math.html)
+(https://docs.scipy.org/doc/numpy/reference/routines.linalg.html)
 
 PIP "INSTALLING NUMPY"
 If you use pip, you can install NumPy with:

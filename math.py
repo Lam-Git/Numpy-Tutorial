@@ -42,6 +42,21 @@ np.matmul(a, b)
 #   [2 2]]
 
 # final output
-#   ([[6., 6.],
-#   [6., 6.]])
+#   ([[6., 6.], [6., 6.]])
+
+# ------------Statistics-------------
+stats = np.array([[1, 2, 3], [4, 5, 6]])
+stats
+# output
+#   ([[1, 2, 3],[4, 5, 6]])
+
+np.min(stats)
+# output---->1
+
+np.max(stats, axis=1)
+# output -----> ([3, 6])
+
+np.sum(stats, axis=0)
+# adds both the rows, and column together
+# output -----> ([5, 7, 9])
 
