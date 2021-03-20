@@ -37,3 +37,7 @@ print(a.nbytes)
 # Get number of elements
 print(a.size)
 # output-----> 3
+
+# Any other number (full_like)
+# copy array "b" but replace value to all 4's
+print(np.full_like(b, 4))
