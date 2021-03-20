@@ -53,3 +53,41 @@ np.identity(5)
 arr = np.array([[1, 2, 3]])
 r1 = np.repeat(arr, 3, axis=0)
 print(r1)
+
+# another way to produce an array
+# 5x5 , z= fill in 3x3 with zero follow by 9 , put it all together output.
+output = np.ones((5, 5))
+print(output)
+
+z = np.zeros((3, 3))
+z[1, 1] = 9
+print(z)
+
+output[1:-1, 1:-1] = z
+print(output)
+# output
+# 5x5 ,
+#   [[1. 1. 1. 1. 1.]
+#   [1. 1. 1. 1. 1.]
+#   [1. 1. 1. 1. 1.]
+#   [1. 1. 1. 1. 1.]
+#   [1. 1. 1. 1. 1.]]
+# z= fill in 3x3 with zero follow by 9
+#   [[0. 0. 0.]
+#   [0. 9. 0.]
+#   [0. 0. 0.]]
+# put it all together output.
+#   [[1. 1. 1. 1. 1.]
+#   [1. 0. 0. 0. 1.]
+#   [1. 0. 9. 0. 1.]
+#   [1. 0. 0. 0. 1.]
+#   [1. 1. 1. 1. 1.]]
+
+# Copying an array.
+a = np.array([1, 2, 3])
+b = a.copy()
+b[0] = 100
+
+print(a)  # output----> [1,2,3]
+print(b)  # output ----> [100,2,3]
+
